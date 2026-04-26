@@ -3,7 +3,8 @@ override['patroni']['nodes'] = [
   "02.pg-common.db.east.local",
   "03.pg-common.db.east.local"
 ]
-
+override['postgresql']['main_hostname'] = 'pg-common.db.east.local'
+override['postgresql']['vip_address'] = '192.168.5.17'
 override['etcd']['pki']['mount'] = 'pki-pg-common'
 override['etcd']['pki']['role'] = 'main'
 override['postgresql']['pki'] = {
