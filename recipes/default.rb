@@ -1,7 +1,7 @@
 include_recipe 'common::default'
 include_recipe 'etcd::default'
 include_recipe 'postgresql::default'
-
+include_recipe 'keepalived::default'
 
 postgresql_role 'pdns' do
   login true

@@ -9,4 +9,5 @@ chef_version '>= 16.0'
 depends 'common'
 depends 'etcd'
 depends 'postgresql'
+depends 'keepalived'
 
