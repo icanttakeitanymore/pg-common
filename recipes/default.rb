@@ -8,6 +8,15 @@ postgresql_role 'pdns' do
   superuser false
   replication false
   createdb true
-  roles []   # если нет доп ролей
+  roles []
+  action :create
+end
+
+postgresql_role 'cinc' do
+  login true
+  superuser false
+  replication false
+  createdb true
+  roles []
   action :create
 end
